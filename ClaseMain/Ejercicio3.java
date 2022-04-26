@@ -32,13 +32,12 @@ public class Ejercicio3 {
         ua.Imprimir();
         System.out.println("Ingrese el nombre del alumno que desea calcular su promedio: ");
         String nom = leer.next();
-        
+
         for (Alumno Alumno : ua.getAlumnos()) {
-            if (Alumno.getNombre().equalsIgnoreCase(nom)){
+            if (Alumno.getNombre().equalsIgnoreCase(nom)) {
                 System.out.println("El promedio de " + nom + " es de: " + ua.notaFinal(Alumno.getNota()));
             }
         }
-        
     }
 
 }
